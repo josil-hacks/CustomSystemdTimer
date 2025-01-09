@@ -1,0 +1,8 @@
+[Unit]
+Description=Runs the backup job triggered from timer
+
+[Service]
+User=pc
+Group=pc
+Type=oneshot
+ExecStart=/bin/bash /home/pc/restic/restic-backup.sh
