@@ -1,0 +1,8 @@
+[Unit]
+Description=This program will run the restic back 5 min after boot.
+
+[Timer]
+OnBootSec=5min
+
+[Install]
+WantedBy=timers.target
