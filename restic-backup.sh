@@ -9,7 +9,7 @@ echo "Starting backupjob for restic at $(date '+%d/%m %H:%M:%S')" >> $LOG
 # Run backup
 restic backup /home
 
-# Check if successful
+# Is backup succesful?
 if [ $? -eq 0 ];then
     result="Backup successful";
 else
